@@ -1,0 +1,11 @@
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  wifis:
+    "${_routerid}":
+      optional: true
+      access-points:
+        "${_ssid}":
+          password:  "${_password}"
+      dhcp4: true
