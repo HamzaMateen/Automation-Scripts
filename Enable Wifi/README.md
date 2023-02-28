@@ -1,4 +1,4 @@
-### Script to connect to a WiFi network with using the terminal.
+### Script for connecting to a Wifi network using the terminal.
 
 ##### Steps
 1. Clone this repository.
