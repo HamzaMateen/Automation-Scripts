@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.radial-blue {
+    background: radial-gradient(lightyellow, skyblue);
+}
+
+.radial-pink {
+    background: radial-gradient(rgb(232, 207, 233), #cae3e4);
+}
+
+.button-width {
+    width: 10px;
+    padding: 2px;
+}

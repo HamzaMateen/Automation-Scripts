@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="min-h-screen grid place-content-center radial-blue">
+    <!-- can I go completely native? -->
+    <div class="w-96 h-96 radial-pink rounded-lg">
+        <h1 class="font-bold text-center p-5 bg-white border-red-500 w-72 m-auto mt-5 rounded-lg shadow-pink-600 radial-blue text-pink-500">AVERAGE TODO LIST</h1>
+        
+        <div class="w-10/12 m-auto mt-5">
+            <form id="addTodo" action="_blank" class="rounded-lg p-1 bg-white flex justify-around gap-2">
+                <input 
+                    id="inputBar" autocomplete="off"
+                    class="rounded-lg font-thin bg-white border-pink-500 focus-within:outline-none"
+                    type="text" name="todo" placeholder="Add your todo here" required
+                />
+                
+                <input class="text-white rounded-lg w-full bg-pink-500 focus-within:outline-none" type="submit" id="submitButton" value="ADD">
+            </form> 
+
+            <!-- Add the storage of todo items -->
+            <div id="container" class="scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-transparent p-1 mt-7 rounded-lg font-thin overflow-auto h-48 w-full">
+
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./main.js"></script>
+    <!-- <div class="flex justify-center outline">
+        <div class="bg-white w-36 h-64"></div>
+        <div class="bg-green-700 w-96 h-64 flex justify-center items-center">
+            <div class="bg-white w-32 h-32 rounded-full relative left-20"></div>
+            <div class="bg-green-700 w-28 h-28 rounded-full relative right-6 bottom-2"></div>
+            <div class="bg-white w-32 h-32 rounded-full relative bottom-10"></div>
+        </div>
+    </div> -->
+</body>
+</html>
